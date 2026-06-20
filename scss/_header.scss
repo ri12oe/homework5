@@ -1,0 +1,146 @@
+
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 16px 0;
+    z-index: 100;
+    background-color: $dark-green;
+
+    .header-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $cream;
+    font-family: $heading-font;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+
+    img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    a {
+        color: $tan;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+.nav-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+
+
+    .bar {
+        display: block;
+        width: 18px;
+        height: 2px;
+        background-color: $cream;
+    }
+}
+
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $darker-green;
+    padding: 24px;
+    z-index: 200;
+
+    .mobile-menu-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+
+    .mobile-menu-links {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+
+        a {
+            color: $cream;
+            font-family: $heading-font;
+            font-size: 28px;
+        }
+    }
+
+    .mobile-menu-cta {
+        margin-top: 48px;
+    }
+}
+
+
+.menu-checkbox:checked~.mobile-menu {
+    display: block;
+}
+
+.mobile-menu-close {
+    width: 44px;
+    height: 44px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+
+
+    .bar {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 18px;
+        height: 2px;
+        background-color: $cream;
+
+        &:first-child {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &:last-child {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+}

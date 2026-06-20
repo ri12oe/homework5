@@ -1,0 +1,50 @@
+
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    color: white !important;
+    text-transform: capitalize !important;
+}
+
+.btn-primary {
+    background-color: $light-green;
+    color: $white;
+    border-color: $light-green;
+
+    &:hover {
+        background-color: $green;
+    }
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: $cream;
+    border-color: rgba(255, 255, 255, 0.3);
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.btn-tan {
+    background-color: $tan;
+    color: $white;
+    border-color: $tan;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}

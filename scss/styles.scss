@@ -1,0 +1,30 @@
+@import "_variables.scss";
+
+
+@import "_base.scss";
+
+
+// Mixins
+@import "_mixins.scss";
+
+// Base
+@import "_base.scss";
+@import "_typography.scss";
+@import "_buttons.scss";
+
+// Header
+@import "_header.scss";
+
+// Page sections
+@import "_hero.scss";
+@import "_featured.scss";
+@import "_services.scss";
+@import "_why-us.scss";
+@import "_testimonials.scss";
+@import "_cta.scss";
+
+// Footer
+@import "_footer.scss";
+
+//Media
+@import "_media.scss";

@@ -1,0 +1,112 @@
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: $cream;
+    overflow: hidden;
+
+    .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 75%;
+        z-index: 0;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom,
+                rgba(20, 24, 15, 0.35),
+                rgba(20, 24, 15, 0.3) 45%,
+                rgba(20, 24, 15, 0.75));
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 144px 24px 64px;
+        text-align: center;
+
+        .hero-eyebrow {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $tan;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            max-width: 620px;
+            margin: 0 auto 16px;
+            font-size: 80px;
+        }
+
+        .hero-subtitle {
+            max-width: 480px;
+            margin: 0 auto 32px;
+            color: rgba(243, 237, 225, 0.8);
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        // Stats row (500+, 2400+, etc.)
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            padding-top: 32px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+            .stat {
+                text-align: center;
+
+                .stat-number {
+                    font-family: $heading-font;
+                    font-size: 32px;
+                    font-weight: 600;
+                    color: $tan;
+                    margin-bottom: 4px;
+                }
+
+                .stat-label {
+                    font-size: 11px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: rgba(243, 237, 225, 0.75);
+                }
+            }
+        }
+    }
+}
+
+.hero-scroll {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(243, 237, 225, 0.75);
+    padding-bottom: 32px;
+}
